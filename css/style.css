@@ -7,19 +7,19 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 0.6em;
     color: #fff;
 }
 
 
 .wrapper{
     height: 100vh;
-
+    background-color: #000;
 }
 /* header rules */
 header{
     background-color: black;
     height: 40px;
-    font-size: 0.8em;
 }
 .views{
     text-align: right;
@@ -36,29 +36,25 @@ header{
 /* main rules */
 main{
     background-color: #000;
-    height: calc(100% - 120px);
+    height: calc(100% - 100px);
     overflow: auto;
 }
 .contents{
     background-color: #000;
-    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 10px 5px;
-    font-size: 0.8em;
-    
+    gap: 10px 5px; 
 }
 .camera{
     flex-basis: 200px;
     height: 120px;
     position: relative;
-    background-image: url(https://picsum.photos/200/300);
-}
-.camera img{
-    width: 100%;
+    background-image: url(../img/ceuse.jpg);
+    background-size: cover;
 }
 .layover{
     background-color: rgba(0, 0, 0, 0.4);
@@ -72,13 +68,53 @@ main{
 /* footer rules */
 footer{
     background-color: #222222;
-    height: 80px; 
+    height: 60px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    display: flex;
+    align-items: center;
+}
+.fa-angle-up{
+    font-size: 1em;
+}
+footer i{
+    font-size: 2em;
+}
+.micro-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    width: fit-content;
+}
+#share-screen{
+    color: #40ba03;
+}
+.end-meeting{
+    background-color: #4a4a4a;
+    position: relative;
+    color: #ff0000;
+    flex-basis: 120px;
+    height: 100%;
+}
+.end-meeting div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
+
+
+
 /* DEBUG rules */
-.wrapper{
-    background-color: #000;
-}
+
+
+
 
 
 
