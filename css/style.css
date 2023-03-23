@@ -5,30 +5,60 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
 
 .wrapper{
     height: 100vh;
 
 }
 /* header rules */
-
+header{
+    background-color: black;
+    height: 40px;
+    font-size: 0.8em;
+}
+.views{
+    text-align: right;
+    padding: 10px 0;
+}
+.views span{
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+}
 
 
 /* main rules */
+main{
+    background-color: #000;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
 .contents{
+    background-color: #000;
     width: 90%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 5px 5px;
-    color: #fff;
+    justify-content: center;
+    gap: 10px 5px;
+    font-size: 0.8em;
+    
 }
 .camera{
     flex-basis: 200px;
-    height: 150px;
+    height: 120px;
     position: relative;
+    background-image: url(https://picsum.photos/200/300);
+}
+.camera img{
+    width: 100%;
 }
 .layover{
     background-color: rgba(0, 0, 0, 0.4);
@@ -40,31 +70,17 @@
 
 
 /* footer rules */
-
+footer{
+    background-color: #222222;
+    height: 80px; 
+}
 
 /* DEBUG rules */
 .wrapper{
     background-color: #000;
 }
-header{
-    background-color: black;
-    color: #fff;
-    height: 40px;
-}
-main{
-    background-color: blue;
-    height: calc(100% - 120px);
-    overflow: auto;
-}
-footer{
-    background-color: #222222;
-    color: #fff;
-    height: 80px; 
-}
-.contents{
-    background-color: orange;
-    height: 100%;
-}
-.camera{
-    background-color: green;
-}
+
+
+
+
+
