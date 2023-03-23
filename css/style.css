@@ -1,0 +1,16 @@
+/* General rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+
+}
+
+/* DEBUG rules */
+.wrapper{
+    background-color: aqua;
+}
