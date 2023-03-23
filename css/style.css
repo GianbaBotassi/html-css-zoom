@@ -10,12 +10,24 @@ body{
     font-size: 0.6em;
     color: #fff;
 }
-
-
 .wrapper{
     height: 100vh;
     background-color: #000;
 }
+
+
+/* hover rules */
+
+.micro-col:hover{
+    background-color: #434343;
+}
+.views span:hover{
+    background-color: #726e6e;
+}
+.end-meeting:hover{
+    background-color: #726e6e;
+}
+
 /* header rules */
 header{
     background-color: black;
@@ -77,19 +89,20 @@ footer{
     display: flex;
     align-items: center;
 }
-.fa-angle-up{
-    font-size: 1em;
-}
-footer i{
-    font-size: 2em;
-}
+
 .micro-col{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     padding: 10px;
-    width: fit-content;
+    border-radius: 10px;
+}
+.fa-angle-up{
+    font-size: 1em;
+}
+footer i{
+    font-size: 2em;
 }
 #share-screen{
     color: #40ba03;
@@ -97,6 +110,7 @@ footer i{
 .end-meeting{
     background-color: #4a4a4a;
     position: relative;
+    font-weight: bold;
     color: #ff0000;
     flex-basis: 120px;
     height: 100%;
