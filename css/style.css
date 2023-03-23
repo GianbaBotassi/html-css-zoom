@@ -5,12 +5,66 @@
     box-sizing: border-box;
 }
 
+
 .wrapper{
     height: 100vh;
 
 }
+/* header rules */
+
+
+
+/* main rules */
+.contents{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 5px 5px;
+    color: #fff;
+}
+.camera{
+    flex-basis: 200px;
+    height: 150px;
+    position: relative;
+}
+.layover{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* footer rules */
+
 
 /* DEBUG rules */
 .wrapper{
-    background-color: aqua;
+    background-color: #000;
+}
+header{
+    background-color: black;
+    color: #fff;
+    height: 40px;
+}
+main{
+    background-color: blue;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+footer{
+    background-color: #222222;
+    color: #fff;
+    height: 80px; 
+}
+.contents{
+    background-color: orange;
+    height: 100%;
+}
+.camera{
+    background-color: green;
 }
